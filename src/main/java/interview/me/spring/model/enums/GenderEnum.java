@@ -1,8 +1,6 @@
 package interview.me.spring.model.enums;
 
-public enum SubjectEnum {
-    TOAN,
-    LY,
-    HOA,
-    SINH,
+public enum GenderEnum {
+    MALE,
+    FEMALE,
 }

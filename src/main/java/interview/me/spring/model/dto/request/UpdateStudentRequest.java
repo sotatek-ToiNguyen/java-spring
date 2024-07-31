@@ -7,10 +7,7 @@ import lombok.Value;
 
 @Value
 @Builder
-public class CreateStudentRequest {
-    @NotEmpty
-    Long teacherId;
-
+public class UpdateStudentRequest {
     @NotEmpty
     String fistName;
 

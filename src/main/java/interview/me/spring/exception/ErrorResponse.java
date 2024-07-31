@@ -1,4 +1,4 @@
-package com.sotatek.ordermanagement.exception;
+package interview.me.spring.exception;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;

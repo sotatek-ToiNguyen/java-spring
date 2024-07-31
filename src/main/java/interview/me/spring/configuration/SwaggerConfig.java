@@ -1,4 +1,4 @@
-package com.sotatek.ordermanagement.configuration;
+package interview.me.spring.configuration;
 
 
 import io.swagger.v3.oas.models.Components;

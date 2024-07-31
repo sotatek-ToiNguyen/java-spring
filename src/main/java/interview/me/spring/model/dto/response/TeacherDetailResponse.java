@@ -1,29 +1,24 @@
 package interview.me.spring.model.dto.response;
 
-import interview.me.spring.model.entity.Student;
 import interview.me.spring.model.entity.Teacher;
-import interview.me.spring.model.enums.GenderEnum;
+import interview.me.spring.model.enums.SubjectEnum;
 import lombok.Builder;
 import lombok.Value;
 
 @Value
 @Builder
-public class StudentDetailResponse {
+public class TeacherDetailResponse {
     Long id;
-    String firstName;
-    String lastName;
-    GenderEnum gender;
+    String name;
     String address;
-    Teacher teacher;
+    SubjectEnum subject;
 
-    public static StudentDetailResponse from(final Student student) {
-        return StudentDetailResponse.builder()
-                .id(student.getId())
-                .firstName(student.getFirstName())
-                .lastName(student.getLastName())
-                .address(student.getAddress())
-                .gender(student.getGender())
-                .teacher(Teacher.f)
+    public static TeacherDetailResponse from(final Teacher teacher) {
+        return TeacherDetailResponse.builder()
+                .id(teacher.getId())
+                .name(teacher.getName())
+                .address(teacher.getAddress())
+                .subject(teacher.getSubject())
                 .build();
     }
 }
